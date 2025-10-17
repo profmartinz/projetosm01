@@ -1,0 +1,165 @@
+/* ============================
+   ESTILOS GERAIS
+   ============================ */
+
+/* ============================
+   CABEÇALHO
+   ============================ */
+
+/* MENU DE NAVEGAÇÃO */
+
+/* ============================
+   APRESENTAÇÃO (HERO)
+   ============================ */
+
+/* ============================
+   SEÇÃO SOBRE
+   ============================ */
+
+/* Define o estilo geral da seção "Sobre" */
+.sobre {
+  max-width: 900px; /* Limita a largura máxima da seção a 900px */
+  margin: 40px auto; /* Adiciona 40px de espaçamento vertical e centraliza horizontalmente */
+  padding: 30px 20px; /* Adiciona espaçamento interno (30px em cima/baixo e 20px nas laterais) */
+  background-color: white; /* Define o fundo branco para destacar o conteúdo */
+  border-radius: 10px; /* Arredonda levemente os cantos da seção */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Adiciona uma sombra suave ao redor da caixa */
+}
+
+/* Define o estilo do título dentro da seção "Sobre" */
+.sobre h2 {
+  margin-top: 0; /* Remove o espaço superior do título */
+  color: #4f46e5; /* Define a cor do texto como roxo */
+}
+/* ============================
+   SEÇÃO DE PROJETOS
+   ============================ */
+
+/* Define o estilo geral da seção que mostra os projetos */
+.projetos {
+  padding: 40px 20px; /* Adiciona espaçamento interno (40px vertical e 20px lateral) */
+  background: linear-gradient(135deg, #6366f1, #8b5cf6); /* Cria um fundo em degradê azul e roxo */
+  color: white; /* Define a cor do texto como branca */
+  text-align: center; /* Centraliza todo o conteúdo dentro da seção */
+}
+
+/* Define o estilo do título da seção de projetos */
+.projetos h2 {
+  color: white; /* Garante que o título fique branco, destacando-se no fundo */
+}
+
+/* Container que agrupa todos os cards de projetos */
+.projetos-container {
+  display: flex; /* Usa o flexbox para organizar os cards lado a lado */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha caso não caibam em uma só */
+  gap: 20px; /* Define um espaçamento de 20px entre os cards */
+  margin-top: 25px; /* Cria um espaço entre o título e os cards */
+}
+
+/* Cada card de projeto individual */
+.projeto {
+  background-color: white; /* Define fundo branco para o card */
+  color: #333; /* Define cor do texto em cinza escuro */
+  border-radius: 10px; /* Arredonda os cantos do card */
+  width: 280px; /* Define largura fixa de 280px */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Adiciona sombra leve para destacar o card */
+  position: relative; /* Necessário para posicionar elementos filhos absolutos (como o badge) */
+  overflow: hidden; /* Impede que conteúdos internos ultrapassem o limite do card */
+  transition: transform 0.2s; /* Cria uma animação suave quando o card é transformado */
+}
+
+/* Efeito de movimento quando o usuário passa o mouse sobre o card */
+.projeto:hover {
+  transform: translateY(-5px); /* Move o card levemente para cima (efeito de destaque) */
+}
+
+/* Estiliza a imagem que aparece no topo do card */
+.projeto img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do card */
+  height: 150px; /* Define altura fixa da imagem */
+  border-top-left-radius: 10px; /* Arredonda o canto superior esquerdo da imagem */
+  border-top-right-radius: 10px; /* Arredonda o canto superior direito da imagem */
+}
+
+/* Estilo do título dentro de cada card de projeto */
+.projeto h3 {
+  margin: 10px 0 5px 0; /* Adiciona espaçamento superior e inferior controlado */
+  color: #4f46e5; /* Define cor roxa para destacar o nome do projeto */
+}
+
+/* Estilo do parágrafo descritivo dentro do card */
+.projeto p {
+  color: #555; /* Define cor cinza média para o texto */
+  font-size: 14px; /* Define tamanho menor para o texto descritivo */
+  padding: 0 10px 15px 10px; /* Adiciona espaçamento interno ao redor do texto */
+}
+
+/* Badge “Mais procurado” que aparece no canto superior do card */
+.badge {
+  position: absolute; /* Posiciona o elemento livremente dentro do card */
+  top: 10px; /* Define distância de 10px do topo do card */
+  left: 10px; /* Define distância de 10px da esquerda */
+  background: linear-gradient(90deg, #4f46e5, #9333ea); /* Cria um fundo em degradê roxo */
+  color: white; /* Deixa o texto branco */
+  padding: 5px 10px; /* Adiciona espaçamento interno no texto */
+  font-size: 12px; /* Define tamanho pequeno para o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  border-radius: 20px; /* Arredonda completamente os cantos (formato de pílula) */
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.2); /* Cria uma leve sombra sob o badge */
+}
+/* ============================
+   CONTATO
+   ============================ */
+
+/* Define o estilo da seção de contato */
+.contato {
+  background-color: white; /* Define o fundo branco para destacar do restante do site */
+  text-align: center; /* Centraliza todo o conteúdo (título e texto) */
+  padding: 40px 20px; /* Cria espaçamento interno em todas as direções */
+  margin-top: 40px; /* Afasta a seção de contato da seção anterior */
+  border-radius: 10px; /* Arredonda os cantos da seção */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Adiciona uma sombra leve ao redor */
+}
+
+/* Estilo do título da seção de contato */
+.contato h2 {
+  color: #4f46e5; /* Define a cor do título em roxo para manter a identidade visual */
+}
+
+/* ============================
+   RODAPÉ
+   ============================ */
+
+/* Define o estilo do rodapé do site */
+.site-footer {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed); /* Cria fundo em degradê roxo e azul */
+  color: #e5e5e5; /* Define o texto em tom cinza claro */
+  text-align: center; /* Centraliza o texto no rodapé */
+  padding: 10px; /* Adiciona espaçamento interno */
+}
+
+/* ============================
+   BOTÃO FIXO
+   ============================ */
+
+/* Botão flutuante de contato no canto inferior direito */
+.btn-contato {
+  position: fixed; /* Mantém o botão fixo na tela mesmo ao rolar a página */
+  right: 20px; /* Define a distância de 20px da borda direita */
+  bottom: 20px; /* Define a distância de 20px da borda inferior */
+  background: linear-gradient(90deg, #4f46e5, #9333ea); /* Cria um degradê de azul e roxo */
+  color: white; /* Define a cor do texto como branca */
+  padding: 10px 20px; /* Cria espaçamento interno para aumentar o tamanho do botão */
+  border-radius: 25px; /* Arredonda o botão completamente (formato de pílula) */
+  text-decoration: none; /* Remove qualquer sublinhado no texto do link */
+  font-weight: bold; /* Deixa o texto em negrito para melhor destaque */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Cria uma sombra forte para parecer elevado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave no tamanho e na sombra */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.btn-contato:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% para dar destaque */
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.4); /* Intensifica a sombra para realçar o botão */
+}
