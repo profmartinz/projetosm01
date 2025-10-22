@@ -1,21 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfólio • José Carlos</title>
 
-  
+  <!-- Google Fonts (necessita internet) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+  <!-- HEADER: cabeçalho semântico com navegação -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Nome / Marca -->
+      <div class="brand">
+        <h1>José Carlos</h1>
+        <p class="subtitle">Desenvolvedor Web | Estudante</p>
+      </div>
 
-  <!-- ========================================== -->
-  <!-- CODIFICAR ACIMA, IGNORAR ABAIXO -->
-  <!-- ========================================== -->
-  <!-- Botão fixo de contato-->
-  <a href="#contato" class="btn-contato">Contato</a>
+      <!-- Navegação principal -->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Script pequeno para inserir o ano atual -->
+  <!-- MAIN: conteúdo principal -->
+  <main>
+    <!-- HERO / Apresentação -->
+    <section class="hero">
+      <!-- foto do perfil (colocar em img/perfil.jpg) -->
+      <img src="images/perfil.webp" alt="Foto do perfil" class="foto-perfil">
+
+      <div class="hero-text">
+        <h2>Olá, eu sou José Carlos</h2>
+        <p>Crio interfaces simples e funcionais com HTML e CSS. Aqui estão alguns dos meus trabalhos.</p>
+      </div>
+    </section>
+
+    <!-- SOBRE: seção semântica -->
+    <section id="sobre" class="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Meu nome é <strong>José Carlos</strong> e sou um estudante apaixonado por tecnologia e design. Tenho me dedicado a aprender desenvolvimento web com foco em HTML, CSS e JavaScript, criando sites modernos, funcionais e com boa experiência de usuário. Gosto de transformar ideias em páginas criativas e responsivas, sempre buscando evoluir em cada projeto que realizo.</p>
+    </section>
+
+    <!-- PROJETOS: container com Flexbox -->
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+
+      <!-- .projetos-container usa flexbox para organizar os cards -->
+      <div class="projetos-container">
+        <!-- Cada projeto é um article - semântico -->
+        <article class="projeto">
+          <img src="images/projeto01.webp" alt="Imagem do Projeto 1">
+          <h3>Site de UI/UX Design</h3>
+          <p>Criação de um site focado em apresentar conceitos de design de interface e experiência do usuário. O objetivo foi desenvolver um layout limpo e organizado, com boa hierarquia visual e fácil navegação entre as seções.</p>
+        </article>
+
+        <article class="projeto">
+          <img src="images/projeto02.webp" alt="Imagem do Projeto 2">
+          <h3>Site de Loja de Roupas</h3>
+          <p>Desenvolvimento de um site promocional para uma loja de roupas, com destaque para as ofertas da Black Friday. O projeto envolveu o uso de banners chamativos, botões interativos e layout responsivo para dispositivos móveis.</p>
+        </article>
+
+        <article class="projeto">
+          <!-- Exemplo com badge posicionado (mostra uso de position) -->
+          <div class="badge">Mais procurado</div>
+          <img src="images/projeto03.webp" alt="Imagem do Projeto 3">
+          <h3>Site de Pizzaria</h3>
+          <p>Criação de um site institucional para uma pizzaria, apresentando cardápio, informações de contato e design atrativo. A proposta foi combinar cores quentes e tipografia convidativa, simulando a identidade visual de uma marca real.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO: rodapé de contato -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p> email@exemplo.com •  linkedin.com/in/seunome</p>
+    </section>
+  </main>
+
+  <!-- FOOTER semântico -->
+  <footer class="site-footer">
+    <p>© <span id="ano"></span> José Carlos. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão fixo de contato: demonstra position: fixed -->
+  <a href="#contato" class="btn-contato" aria-label="Ir para contato">Contato</a>
+
+  <!-- Script pequeno para inserir o ano atual (opcional, demonstra DOM) -->
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
   </script>
