@@ -2,15 +2,106 @@
    ESTILOS GERAIS
    ============================ */
 
+/* Define o estilo geral do corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte principal do texto */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0;
+  background-color: #f2f4ff; /* Define uma cor de fundo clara para o site */
+  color: #333; /* Define a cor padrão do texto (cinza escuro) */
+}
+
 /* ============================
    CABEÇALHO
    ============================ */
 
+/* Estilo geral do cabeçalho do site */
+.site-header {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed); /* Cria um degradê horizontal de roxo e lilás */
+  color: white; /* Define a cor do texto como branca */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Container interno do cabeçalho */
+.header-inner {
+  display: flex; /* Usa flexbox para alinhar elementos na horizontal */
+  justify-content: space-between; /* Espaça os elementos nas extremidades (esquerda e direita) */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+/* Título principal da marca (nome do site) */
+.brand h1 {
+  margin: 0; /* Remove a margem padrão do título */
+  font-size: 24px; /* Define o tamanho da fonte */
+}
+
+/* Subtítulo da marca (descrição abaixo do nome) */
+.brand .subtitle {
+  margin: 0; /* Remove margens padrão */
+  font-size: 14px; /* Define tamanho menor para o subtítulo */
+}
+
 /* MENU DE NAVEGAÇÃO */
+
+/* Define o estilo da lista principal de links do menu */
+.main-nav ul {
+  list-style: none; /* Remove os marcadores de lista */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamento interno padrão */
+  display: flex; /* Alinha os itens do menu na horizontal */
+}
+
+/* Define o espaçamento entre os itens da lista */
+.main-nav li {
+  margin-left: 15px; /* Cria espaço entre os links */
+}
+
+/* Estilo dos links do menu */
+.main-nav a {
+  color: white; /* Define cor do texto dos links como branca */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Efeito visual quando o mouse passa sobre o link */
+.main-nav a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
 
 /* ============================
    APRESENTAÇÃO (HERO)
    ============================ */
+
+/* Define o estilo da seção de destaque inicial (hero) */
+.hero {
+  display: flex; /* Usa flexbox para alinhar elementos lado a lado */
+  align-items: center; /* Centraliza verticalmente os elementos dentro da seção */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  gap: 20px; /* Define um espaço de 20px entre os elementos (texto e imagem) */
+  padding: 50px 20px; /* Adiciona espaçamento interno (50px acima/abaixo e 20px nas laterais) */
+  background: linear-gradient(135deg, #4f46e5, #9333ea); /* Cria um fundo em degradê diagonal */
+  color: white; /* Define a cor do texto como branca */
+}
+
+/* Define o estilo da imagem de perfil dentro da seção hero */
+.foto-perfil {
+  width: 130px; /* Largura da imagem */
+  height: 130px; /* Altura da imagem */
+  border-radius: 50%; /* Deixa a imagem totalmente circular */
+  border: 4px solid white; /* Adiciona uma borda branca de 4px */
+}
+
+/* Estilo do título principal dentro do texto da hero */
+.hero-text h2 {
+  margin: 0; /* Remove margens padrão do título */
+  font-size: 24px; /* Define o tamanho da fonte */
+}
+
+/* Estilo do parágrafo descritivo dentro da hero */
+.hero-text p {
+  margin-top: 5px; /* Cria um pequeno espaço acima do parágrafo */
+  color: #e5e5e5; /* Define uma cor de texto mais clara que o branco */
+}
 
 /* ============================
    SEÇÃO SOBRE
@@ -31,6 +122,7 @@
   margin-top: 0; /* Remove o espaço superior do título */
   color: #4f46e5; /* Define a cor do texto como roxo */
 }
+
 /* ============================
    SEÇÃO DE PROJETOS
    ============================ */
@@ -108,6 +200,7 @@
   border-radius: 20px; /* Arredonda completamente os cantos (formato de pílula) */
   box-shadow: 1px 2px 6px rgba(0,0,0,0.2); /* Cria uma leve sombra sob o badge */
 }
+
 /* ============================
    CONTATO
    ============================ */
